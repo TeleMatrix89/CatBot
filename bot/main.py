@@ -3,7 +3,7 @@ from discord import __version__
 from os import listdir,getenv,chdir
 from os.path import dirname,abspath,join
 BASE_DIR = dirname(dirname(abspath(__file__)))
-COG_DIR = join(BASE_DIR,"cogs")
+COG_DIR = join(BASE_DIR,join("bot","cogs"))
 TOKEN = getenv("DISCORD_TOKEN","69")
 
 
