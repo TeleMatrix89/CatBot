@@ -1,11 +1,9 @@
 from discord.ext.commands import Bot
 from discord import __version__
 from os import listdir,getenv,chdir
-
-chdir('./bot')
-
-
-
+from os.path import dirname,abspath,join
+BASE_DIR = dirname(dirname(abspath(__file__)))
+COG_DIR = join(BASE_DIR,"cogs")
 TOKEN = getenv("DISCORD_TOKEN","69")
 
 
@@ -21,7 +19,7 @@ print ("Loading Bot, Please Wait")
 async def ping(ctx,*args,**kwargs):
     await ctx.send(content='Pinging')
 
-cogs = sorted(listdir("./bot/cogs"))
+cogs = sorted(listdir(COG_DIR))
 for cog in cogs:
       if cog.endswith(".py"):
          try:
