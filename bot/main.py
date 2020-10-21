@@ -1,12 +1,16 @@
 from discord.ext.commands import Bot
 from discord import __version__
-from os import listdir,getenv
+from os import listdir,getenv,chdir
 
-TOKEN = getenv("DISCORD_TOKEN")
+chdir('./bot')
+
+
+
+TOKEN = getenv("DISCORD_TOKEN","69")
 
 
 description = """A Fully Custom Discord Bot"""
-command_prefix = ("--",)
+command_prefix = ("::",)
 
 bot = Bot(command_prefix=command_prefix,description=description)
 
@@ -28,4 +32,9 @@ for cog in cogs:
             print(f"{cog} can not be loaded")
             print(e)
 
-bot.run(TOKEN,bot=True,reconnect=True)
+
+try:
+    bot.run(TOKEN,bot=True,reconnect=True)
+except Exception as e:
+    print("Major Bot Error")
+    print(e)
