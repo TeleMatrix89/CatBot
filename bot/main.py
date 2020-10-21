@@ -21,7 +21,7 @@ print ("Loading Bot, Please Wait")
 async def ping(ctx,*args,**kwargs):
     await ctx.send(content='Pinging')
 
-cogs = sorted(listdir("./cogs"))
+cogs = sorted(listdir("./bot/cogs"))
 for cog in cogs:
       if cog.endswith(".py"):
          try:
