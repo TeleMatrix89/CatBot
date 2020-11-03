@@ -1,4 +1,5 @@
 from discord.ext.commands import Bot
+from discord.errors import LoginFailure
 from discord import __version__, Intents
 from os import listdir,getenv,chdir
 from os.path import dirname,abspath,join
@@ -34,6 +35,8 @@ for cog in cogs:
 
 try:
     bot.run(TOKEN,bot=True,reconnect=True)
+except LoginFailure as e:
+    print(f'Bot Failed to Login this is most likely because of Invalid Token given.')
 except Exception as e:
-    print("Major Bot Error")
+    print(f"Major Bot Error - {type(e)}")
     print(e)
