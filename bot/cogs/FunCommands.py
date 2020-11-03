@@ -5,7 +5,7 @@ class FunCommands(Cog):
     def __init__(self,bot):
         self.bot = bot
 
-    @commands.command(name="ping")
+    @commands.command(name="pong")
     async def ching_command(self,ctx,*args,**kwargs):
         await ctx.send("Haha,FOOLED AGAIN MUHAHAHA")
     
