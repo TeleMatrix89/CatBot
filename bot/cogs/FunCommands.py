@@ -7,7 +7,7 @@ class FunCommands(Cog):
 
     @commands.command(name="ping")
     async def ching_command(self,ctx,*args,**kwargs):
-        await ctx.send("Haha, you were expecting me to say Pong! FOOLED AGAIN MUHAHAHA")
+        await ctx.send("Haha,FOOLED AGAIN MUHAHAHA")
     
 
     
