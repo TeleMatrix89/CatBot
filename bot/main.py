@@ -1,7 +1,8 @@
 from discord.ext.commands import Bot
-from discord import __version__
+from discord import __version__, Intents
 from os import listdir,getenv,chdir
 from os.path import dirname,abspath,join
+
 BASE_DIR = dirname(dirname(abspath(__file__)))
 COG_DIR = join(BASE_DIR,join("bot","cogs"))
 TOKEN = getenv("DISCORD_TOKEN","69")
@@ -10,7 +11,7 @@ TOKEN = getenv("DISCORD_TOKEN","69")
 description = """A Fully Custom Discord Bot"""
 command_prefix = ("<>",)
 
-bot = Bot(command_prefix=command_prefix,description=description)
+bot = Bot(command_prefix=command_prefix,description=description,intents=Intents.all())
 
 print ("Discord Version:",__version__)
 print ("Loading Bot, Please Wait")
