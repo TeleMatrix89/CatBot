@@ -1,5 +1,6 @@
 from discord.ext.commands import Cog
 from discord.ext import commands
+from discord import File
 
 class FunCommands(Cog):
     def __init__(self,bot):
@@ -15,6 +16,11 @@ class FunCommands(Cog):
             await ctx.send("Hello ree master, my creator")
         else:
             await ctx.send("Hello, you have been blessed by the ree")
+
+    @commands.command(name="test")
+    async def ching_command(self,ctx,*args,**kwargs):
+        img = File('dog.png')
+        await ctx.send(img)
     
 
     
