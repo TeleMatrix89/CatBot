@@ -14,8 +14,12 @@ class FunCommands(Cog):
     async def ching_command(self,ctx,*args,**kwargs):
         if ctx.author.id == 268122068007124993:
             await ctx.send("Hello ree master, my creator")
+        elif ctx.author.id == 759060138006020146:
+            await ctx.send("FUS RO REE")
+        elif ctx.author.id == 541615594202464257:
+            await ctx.send("Joke's on you, I'm into ree")
         else:
-            await ctx.send("Hello, you have been blessed by the ree")
+            await ctx.send("Hello, you have been blessed by the ree. hehehe")
 
     @commands.command(name="test")
     async def ching_command(self,ctx,*args,**kwargs):
