@@ -22,6 +22,13 @@ class FunCommands(Cog):
             await ctx.send("Ree, y toes are big cold.... poop")
         else:
             await ctx.send("Hello, you have been blessed by the ree.")
+
+    @commands.command(name="soul")
+    async def ching_command(self,ctx,*args,**kwargs):
+        if ctx.author.id == 303480386271313921:
+            await ctx.send("Love you my sister <3")
+        else:
+            await ctx.send("You're not Soul... go away")
 '''
     @commands.command(name="test")
     async def ching_command(self,ctx,*args,**kwargs):
