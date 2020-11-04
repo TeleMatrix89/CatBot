@@ -18,9 +18,9 @@ class FunCommands(Cog):
             await ctx.send("Hello, you have been blessed by the ree.")
 
     @commands.command(name="test")
-    img = File('dog.png')
     async def ching_command(self,ctx,*args,**kwargs):
-        await ctx.send(img)
+        img = File('dog.png', filename="dog.png")
+        await ctx.send(content="Have a god boi, ", File=img)
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
