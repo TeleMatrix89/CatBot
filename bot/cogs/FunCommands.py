@@ -22,12 +22,12 @@ class FunCommands(Cog):
             await ctx.send("Ree, y toes are big cold.... poop")
         else:
             await ctx.send("Hello, you have been blessed by the ree.")
-
+'''
     @commands.command(name="test")
     async def ching_command(self,ctx,*args,**kwargs):
         img = file('dog.png')
         await ctx.send(img)
-
+'''
 
     
 
