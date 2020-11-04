@@ -18,6 +18,8 @@ class FunCommands(Cog):
             await ctx.send("FUS RO REE")
         elif ctx.author.id == 541615594202464257:
             await ctx.send("Joke's on you, I'm into ree... hehehe")
+        elif ctx.author.id == 303480386271313921:
+            await ctx.send("Ree, y toes are big cold.... poop")
         else:
             await ctx.send("Hello, you have been blessed by the ree.")
 '''
