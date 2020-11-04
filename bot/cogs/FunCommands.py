@@ -14,29 +14,13 @@ class FunCommands(Cog):
     async def ching_command(self,ctx,*args,**kwargs):
         if ctx.author.id == 268122068007124993:
             await ctx.send("Hello ree master, my creator")
-        elif ctx.author.id == 759060138006020146:
-            await ctx.send("FUS RO REE")
-        elif ctx.author.id == 541615594202464257:
-            await ctx.send("Joke's on you, I'm into ree... hehehe")
-        elif ctx.author.id == 303480386271313921:
-            await ctx.send("Ree, y toes are big cold.... poop")
         else:
             await ctx.send("Hello, you have been blessed by the ree.")
 
-    @commands.command(name="soul")
-    async def ching_command(self,ctx,*args,**kwargs):
-        if ctx.author.id == 303480386271313921:
-            await ctx.send("Love you my sister <3")
-        else:
-            await ctx.send("You're not Soul... go away")
-
     @commands.command(name="test")
+    img = File('dog.png')
     async def ching_command(self,ctx,*args,**kwargs):
-        img = File('dog.png')
         await ctx.send(img)
-
-
-    
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
