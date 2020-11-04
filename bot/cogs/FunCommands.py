@@ -17,9 +17,9 @@ class FunCommands(Cog):
         elif ctx.author.id == 759060138006020146:
             await ctx.send("FUS RO REE")
         elif ctx.author.id == 541615594202464257:
-            await ctx.send("Joke's on you, I'm into ree")
+            await ctx.send("Joke's on you, I'm into ree... hehehe")
         else:
-            await ctx.send("Hello, you have been blessed by the ree. hehehe")
+            await ctx.send("Hello, you have been blessed by the ree.")
 
     @commands.command(name="test")
     async def ching_command(self,ctx,*args,**kwargs):
