@@ -16,12 +16,12 @@ class FunCommands(Cog):
             await ctx.send("Hello ree master, my creator")
         else:
             await ctx.send("Hello, you have been blessed by the ree")
-'''
+
     @commands.command(name="test")
     async def ching_command(self,ctx,*args,**kwargs):
         await ctx.send(file('dog.png'))
     
-'''
+
     
 
 def setup(bot):
