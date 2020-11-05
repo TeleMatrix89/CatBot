@@ -7,7 +7,7 @@ class FunCommands(Cog):
         self.bot = bot
 
     @commands.command(name="pong")
-    async def ching_command(self,ctx,*args,**kwargs):
+    async def chong_command(self,ctx,*args,**kwargs):
         await ctx.send("Haha,FOOLED AGAIN MUHAHAHA")
 
     @commands.command(name="ree")
@@ -39,6 +39,11 @@ class FunCommands(Cog):
             await ctx.send("Yus, you are the best kay to ever exist. We appreciate you and everything you've done. Thank you for baring with my creator all these years")
         else:
             await ctx.send("To sum it up, Kay is big great")
+
+    @commands.command(name="cam", aliases="cammy")
+    async def cam_command(self,ctx,*args,**kwargs):
+        if ctx.author.id == 624373134837022721:
+            await ctx.send("Wow too big, too strong. My code cannot handle this")
 
 '''
     @commands.command(name="test")
