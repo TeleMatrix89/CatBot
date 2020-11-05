@@ -52,7 +52,7 @@ class FunCommands(Cog):
         if ctx.author.id == 362998034277072898:
             await ctx.send("Omw to do ur mom poopy")
         else:
-            ctx.send("Gus is ok, I guess")
+            await ctx.send("Gus is ok, I guess")
         
 
 
