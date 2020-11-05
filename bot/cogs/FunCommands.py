@@ -27,7 +27,9 @@ class FunCommands(Cog):
     @commands.command(name="soul")
     async def ching_command(self,ctx,*args,**kwargs):
         if ctx.author.id == 303480386271313921:
-            await ctx.send("My fave sister)
+            await ctx.send("My fave sister")
+        elif ctx.author.id == 268122068007124993 or ctx.author.id == 773319306208608266:
+            await ctx.send("Well done, you have tested, and it has worked. Big yay")
         else:
             await ctx.send("You're not Soul... go away")
 '''
