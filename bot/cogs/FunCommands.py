@@ -20,7 +20,6 @@ class FunCommands(Cog):
             await ctx.send("Joke's on you, I'm into ree... hehehe")
         elif ctx.author.id == 303480386271313921:
             await ctx.send("Ree, y toes are big cold.... poop")
-    
         else:
             await ctx.send("Hello, you have been blessed by the ree.")
 
@@ -42,8 +41,8 @@ class FunCommands(Cog):
 
     @commands.command(name="cam", aliases="cammy")
     async def cam_command(self,ctx,*args,**kwargs):
-        if ctx.author.id == 624373134837022721:
-            await ctx.send("Wow too big, too strong. My code cannot handle this")
+        await ctx.send("Wow too big, too strong. My code cannot handle this")
+        
 
 '''
     @commands.command(name="test")
