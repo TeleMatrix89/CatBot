@@ -39,7 +39,7 @@ class FunCommands(Cog):
         else:
             await ctx.send("To sum it up, Kay is big great")
 
-    @commands.command(name="cam", aliases="cammy")
+    @commands.command(name="cam", alias="cammy")
     async def cam_command(self,ctx,*args,**kwargs):
         await ctx.send("Wow too big, too strong. My code cannot handle this")
         
