@@ -51,7 +51,7 @@ class FunCommands(Cog):
         if ctx.author.id == 583260078157594624:
             await ctx.send("no spam pls")
         else:
-        await ctx.send(content="Have doggo",file=fil)
+            await ctx.send(content="Have doggo",file=fil)
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
