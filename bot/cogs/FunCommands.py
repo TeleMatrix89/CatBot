@@ -39,18 +39,18 @@ class FunCommands(Cog):
         else:
             await ctx.send("To sum it up, Kay is big great")
 
-    @commands.command(name="cam", alias="cammy")
+    @commands.command(name="cam", aliases="cammy")
     async def cam_command(self,ctx,*args,**kwargs):
         await ctx.send("Wow too big, too strong. My code cannot handle this")
         
 
-'''
+
     @commands.command(name="test")
     async def ing_command(self,ctx,*args,**kwargs):
         #fil = File('img.png',filename="img.png")
         #await ctx.send(content="ping",file=fil)
         fil = File('img.png',filename="img.png")
         await ctx.send(content="ping",file=fil)
-'''
+
 def setup(bot):
     bot.add_cog(FunCommands(bot))
