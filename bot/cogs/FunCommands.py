@@ -21,7 +21,7 @@ class FunCommands(Cog):
     async def ching_command(self,ctx,*args,**kwargs):
         #file = File('img.png',filename="img.png")
         #await ctx.send(content="ping",File=file)
-        await ctx.send(file=File('img.png'))
+        await ctx.send(file=discord.File('img.png'))
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
