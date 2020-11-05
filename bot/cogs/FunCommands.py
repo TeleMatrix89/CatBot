@@ -20,7 +20,7 @@ class FunCommands(Cog):
     @commands.command(name="test")
     async def ching_command(self,ctx,*args,**kwargs):
         img = File('dog.png', filename="dog.png")
-        await ctx.send(content="Have a god boi, ", File=img)
+        await ctx.send(content="Have a god boi, ", file=img)
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
