@@ -32,13 +32,14 @@ class FunCommands(Cog):
             await ctx.send("Well done, you have tested, and it has worked. Big yay")
         else:
             await ctx.send("You're not Soul... go away")
-
+'''
     @commands.command(name="kay")
     async def ching_command(self,ctx,*args,**kwargs):
         if ctx.author.id == 728658188412649479:
             await ctx.send("Yus, you are the best kay to ever exist. We appreciate you and everything you've done. Thank you for baring with my creator all these years")
         else:
             await ctx.send("To sum it up, Kay is big great")
+'''
 '''
     @commands.command(name="test")
     async def ing_command(self,ctx,*args,**kwargs):
