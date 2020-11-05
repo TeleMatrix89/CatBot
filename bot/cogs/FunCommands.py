@@ -29,6 +29,8 @@ class FunCommands(Cog):
             await ctx.send("My fave sister")
         elif ctx.author.id == 268122068007124993 or ctx.author.id == 773319306208608266:
             await ctx.send("Well done, you have tested, and it has worked. Big yay")
+        elif ctx.author.id == 583260078157594624:
+            await ctx.send("Soul bad")
         else:
             await ctx.send("You're not Soul... go away")
 
