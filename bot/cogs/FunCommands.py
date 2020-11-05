@@ -18,7 +18,7 @@ class FunCommands(Cog):
             await ctx.send("Hello, you have been blessed by the ree.")
 
     @commands.command(name="test")
-    async def ree(self,ctx,*args,**kwargs):
+    async def ching_command(self,ctx,*args,**kwargs):
         fil = File('img.png',filename="img.png")
         await ctx.send(content="ping",File=fil)
 
