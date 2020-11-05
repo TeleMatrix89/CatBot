@@ -21,7 +21,7 @@ class FunCommands(Cog):
     async def ing_command(self,ctx,*args,**kwargs):
         #fil = File('img.png',filename="img.png")
         #await ctx.send(content="ping",file=fil)
-        fil = File('D:\Documents\Discord Bots\CatBot\bot\img.png',filename="img.png")
+        fil = File('img.png',filename="img.png")
         await ctx.send(content="ping",file=fil)
 
 def setup(bot):
