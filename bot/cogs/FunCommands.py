@@ -25,7 +25,7 @@ class FunCommands(Cog):
             await ctx.send("Hello, you have been blessed by the ree.")
 
     @commands.command(name="soul")
-    async def ching_command(self,ctx,*args,**kwargs):
+    async def souling_command(self,ctx,*args,**kwargs):
         if ctx.author.id == 303480386271313921:
             await ctx.send("My fave sister")
         elif ctx.author.id == 268122068007124993 or ctx.author.id == 773319306208608266:
