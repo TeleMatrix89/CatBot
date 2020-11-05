@@ -47,8 +47,8 @@ class FunCommands(Cog):
 
     @commands.command(name="test")
     async def ing_command(self,ctx,*args,**kwargs):
-        file = File('img.png',filename="img.png")
-        await ctx.send(content="ping",file=file)
+        fil = File('img.png',filename="img.png")
+        await ctx.send(content="ping",file=fil)
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
