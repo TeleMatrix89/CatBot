@@ -46,6 +46,13 @@ class FunCommands(Cog):
     @commands.command(aliases=['cam', 'cammy'])
     async def cam_command(self,ctx,*args,**kwargs):
         await ctx.send("Wow too big, too strong. My code cannot handle this")
+
+    @commands.command(name="guz")
+    async def guz_command(self,ctx,*args,**kwargs):
+        if ctx.author.id == 362998034277072898:
+            await ctx.send("Omw to do ur mom poopy")
+        else:
+            ctx.send("Gus is ok, I guess")
         
 
 
