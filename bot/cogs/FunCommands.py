@@ -11,7 +11,7 @@ class FunCommands(Cog):
         await ctx.send("Haha,FOOLED AGAIN MUHAHAHA")
 
     @commands.command(name="ree")
-    async def ching_command(self,ctx,*args,**kwargs):
+    async def hing_command(self,ctx,*args,**kwargs):
         if ctx.author.id == 268122068007124993:
             await ctx.send("Hello ree master, my creator")
         else:
