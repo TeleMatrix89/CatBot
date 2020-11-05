@@ -48,6 +48,9 @@ class FunCommands(Cog):
     @commands.command(name="dog")
     async def ing_command(self,ctx,*args,**kwargs):
         fil = File('img.png',filename="img.png")
+        if ctx.author.id == 583260078157594624:
+            await ctx.send("no spam pls")
+        else:
         await ctx.send(content="Have doggo",file=fil)
 
 def setup(bot):
