@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord import Member, Embed, Colour, User
 from discord.ext.commands import BucketType
 from discord import File
+from datetime import datetime
 
 class FunCommands(Cog):
     def __init__(self,bot):
@@ -20,7 +21,6 @@ class FunCommands(Cog):
             await ctx.send("Hello, you have been blessed by the ree.")
 
     @commands.command(name="dog")
-    @commands.cooldown(rate=3, per=10, type=BucketType.member)
     async def dog_command(self,ctx,*args,**kwargs):
         fil = File('img.png',filename="img.png")
         if ctx.author.id == 583260078157594624:
@@ -28,11 +28,23 @@ class FunCommands(Cog):
         else:
             await ctx.send(content="Have doggo",file=fil)
 
-    @get_member_info.error
-    async def get_member_error(self,ctx,error):
-        if(isinstance(error,commands.CommandOnCooldown)):
-            return await ctx.send(f"Slow down {ctx.author} and retry after {int(error.retry_after)} seconds")
-        await ctx.send("Command Errored")
+    @commands.command(name="member")
+    async def get_member_info(self, ctx, mentioned:Member=None,*args):
+        if (ctx.guild is None): return ctx.send("You are not in a guild")
+        member:Member = mentioned if mentioned else ctx.author
+        emb = Embed(colour=Colour.red(), timestamp=datetime.now())
+        emb.set_author(name=f"{member}", icon_url=member.avatar_url)
+
+        emb.add_field(name="Top-Role",value=f"Name: {member.top_role}\n\
+            Colour: {member.top_role.colour}\n\
+            Holders: {len(member.top_role.members)}\n\
+            CreatedAt: {member.top_role.created_at}")
+        emb.add_field(name="info",value=f"JoinDate: {member.joined_at}\n\
+            Nick: {member.nick}\n\
+            CreatedAt: {member.created_at}")
+        emb.set_footer(text=f"{member.id}")
+        await ctx.send(embed=emb) 
+
 
 def setup(bot):
     bot.add_cog(FunCommands(bot))
