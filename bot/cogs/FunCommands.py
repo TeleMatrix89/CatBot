@@ -37,7 +37,7 @@ class FunCommands(Cog):
 
         emb.add_field(name="Top-Role",value=f"Name: {member.top_role}\n\
             Colour: {member.top_role.colour}\n\
-            Holders: {len(member.top_role.members)}\n\
+            No. of people with Role: {len(member.top_role.members)}\n\
             CreatedAt: {member.top_role.created_at}")
         emb.add_field(name="info",value=f"JoinDate: {member.joined_at}\n\
             Nick: {member.nick}\n\
