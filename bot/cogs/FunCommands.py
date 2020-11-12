@@ -1,7 +1,7 @@
 from discord.ext.commands import Cog
 from discord.ext import commands
 from discord import Member, Embed, Colour, User
-from discord.ext.commands import Cog,BucketType
+from discord.ext.commands import BucketType
 from discord import File
 
 class FunCommands(Cog):
