@@ -1,6 +1,6 @@
 from discord.ext.commands import Bot
 from discord.errors import LoginFailure
-from discord import __version__, Intent
+from discord import __version__, Intents
 from os import listdir,getenv,chdir
 from os.path import dirname,abspath,join
 
