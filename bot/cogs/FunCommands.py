@@ -21,7 +21,6 @@ class FunCommands(Cog):
 
     @commands.command(name="dog")
     @commands.cooldown(rate=3, per=10, type=BucketType.member)
-    @commands.MaxCurrency(3, BucketType.member, wait = True)
     async def dog_command(self,ctx,*args,**kwargs):
         fil = File('img.png',filename="img.png")
         if ctx.author.id == 583260078157594624:
