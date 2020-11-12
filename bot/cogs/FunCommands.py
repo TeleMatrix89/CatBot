@@ -41,7 +41,9 @@ class FunCommands(Cog):
             CreatedAt: {member.top_role.created_at}")
         emb.add_field(name="info",value=f"JoinDate: {member.joined_at}\n\
             Nick: {member.nick}\n\
-            CreatedAt: {member.created_at}")
+            CreatedAt: {member.created_at}\n\
+            Profile Pic: {member.avatar_url}")
+            
         emb.set_footer(text=f"{member.id}")
         await ctx.send(embed=emb) 
 
