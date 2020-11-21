@@ -20,6 +20,13 @@ class FunCommands(Cog):
         else:
             await ctx.send("Hello, you have been blessed by the ree.")
 
+    @commands.command(name="test")
+    async def test_command(self,ctx,*args,**kwargs):
+        if ctx.author.id == 268122068007124993:
+            await ctx.send("Y!workers buy")
+        else:
+            await ctx.send("You are not a tester")
+
     @commands.command(name="dog")
     async def dog_command(self,ctx,*args,**kwargs):
         fil = File('img.png',filename="img.png")
