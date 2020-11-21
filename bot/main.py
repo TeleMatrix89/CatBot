@@ -17,6 +17,20 @@ bot = Bot(command_prefix=command_prefix,description=description,intents=Intents.
 print ("Discord Version:",__version__)
 print ("Loading Bot, Please Wait")
 
+@bot.event
+async def on_ready():
+    print("Bot has loaded")
+    print("Version: "+__version__)
+    print(f'Name {str(bot.user)}')
+    print(f"ID: {bot.user.id}")
+@bot.event
+async def on_message(message):
+    if(message.author.bot): return
+    if('\U0001F440' in message.content):
+        await message.add_reaction('\U0001F440')
+
+    await bot.process_commands(message)
+
 @bot.command(pass_context=True)
 async def ping(ctx,*args,**kwargs):
     await ctx.send(content='Pinging')
