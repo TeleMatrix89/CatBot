@@ -17,7 +17,7 @@ class FunCommands(Cog):
              "Did this ace bot think it has any authority here?",
              "When we all come together ace bot will be gone from the universe",
              "One day ace bot will know its place"]
-            num = randint(0,10)
+            num = randint(0,5)
             if(num == 3):
                 await message.channel.send(content=choice(response))
 
