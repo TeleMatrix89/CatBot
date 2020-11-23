@@ -9,6 +9,10 @@ class FunCommands(Cog):
     def __init__(self,bot):
         self.bot = bot
 
+    @commands.command(name="owner")
+    async def owner_command(self,ctx,*args):
+        await ctx.send("We all know that Lord Tropical is the owner")
+
     @commands.command(name="pong")
     async def pong_command(self,ctx,*args,**kwargs):
         await ctx.send("Haha,FOOLED AGAIN MUHAHAHA")
