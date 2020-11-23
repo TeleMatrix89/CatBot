@@ -4,10 +4,22 @@ from discord import Member, Embed, Colour, User
 from discord.ext.commands import BucketType
 from discord import File
 from datetime import datetime
+from random import randint, choice
 
 class FunCommands(Cog):
     def __init__(self,bot):
         self.bot = bot
+
+    @commands.Cog.listner(name="on_message")
+    async def ListenForAceBot(self,message):
+        if(message.author.id == 761541777571708930):
+            response = ["ha this ace bot is funny XD",
+             "Did this ace bot think it has any authority here?",
+             "When we all come together ace bot will be gone from the universe",
+             "One day ace bot will know its place"]
+            num = randint(0,10)
+            if(num == 3):
+                await message.channel.send(content=choice(response))
 
     @commands.command(name="owner")
     async def owner_command(self,ctx,*args):
