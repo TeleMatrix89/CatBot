@@ -10,7 +10,7 @@ class FunCommands(Cog):
     def __init__(self,bot):
         self.bot = bot
 
-    @commands.Cog.listner(name="on_message")
+    @commands.Cog.listener(name="on_message")
     async def ListenForAceBot(self,message):
         if(message.author.id == 761541777571708930):
             response = ["ha this ace bot is funny XD",
