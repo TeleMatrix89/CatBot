@@ -38,9 +38,9 @@ class FunCommands(Cog):
         if(member is None): return print("member non")
         if(member.id in [615731606677880842,380068718379663360,268122068007124993]): return print("they aint creeper")
         links = [
-            "https://tenor.com/view/minecraft-creeper-whipping-hair-video-games-gangnam-style-gif-18649087",
-            "https://tenor.com/view/minecraft-creeperrap-boomboomboom-gif-9738459",
-            "https://tenor.com/view/creeper-spin-roblox-gif-16954879"
+            "https://media1.tenor.com/images/c533b83b1619ecf154a3d996901a9e53/tenor.gif",
+            "https://media.tenor.com/images/17c16315d90b9eda89c74849213278d1/tenor.gif",
+            "https://media.tenor.com/images/c5c853495c3fc4738fc0189c0832937a/tenor.gif"
         ]
         emb = Embed(description=f"Watch out {member.mention} is a creeper",colour=Colour.red())
         emb.set_image(url=choice(links))
