@@ -28,22 +28,22 @@ class FunCommands(Cog):
                 "https://tenor.com/view/creeper-spin-roblox-gif-16954879"
             ]
             emb = Embed(description="Watch out <@690941299943014431> is a creeper",colour=Colour.red())
-            emb.set_image(choice(links))
+            emb.set_image(url=choice(links))
             await message.channel.send(embed=emb)
 
     @commands.command(name="creeper")
     async def creeper_command(self,ctx,member:Member= None):
         await ctx.message.delete()
-        if(ctx.author.id not in [615731606677880842,380068718379663360,268122068007124993]): return
-        if(member is None): return
-        if(member.id in [615731606677880842,380068718379663360,268122068007124993]): return
+        if(ctx.author.id not in [615731606677880842,380068718379663360,268122068007124993]): return print("no auth")
+        if(member is None): return print("member non")
+        if(member.id in [615731606677880842,380068718379663360,268122068007124993]): return print("they aint creeper")
         links = [
             "https://tenor.com/view/minecraft-creeper-whipping-hair-video-games-gangnam-style-gif-18649087",
             "https://tenor.com/view/minecraft-creeperrap-boomboomboom-gif-9738459",
             "https://tenor.com/view/creeper-spin-roblox-gif-16954879"
         ]
         emb = Embed(description=f"Watch out {member.mention} is a creeper",colour=Colour.red())
-        emb.set_image(choice(links))
+        emb.set_image(url=choice(links))
         await ctx.send(embed=emb)
 
     @commands.command(name="owner")
