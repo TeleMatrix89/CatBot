@@ -20,6 +20,16 @@ class FunCommands(Cog):
             num = randint(0,5)
             if(num == 3):
                 await message.channel.send(content=choice(response))
+        elif(message.author.id == 690941299943014431):
+            if(randint(0,60==55):
+            links = [
+                "https://tenor.com/view/minecraft-creeper-whipping-hair-video-games-gangnam-style-gif-18649087",
+                "https://tenor.com/view/minecraft-creeperrap-boomboomboom-gif-9738459",
+                "https://tenor.com/view/creeper-spin-roblox-gif-16954879"
+            ]
+            emb = Embed(description="Watch out <@690941299943014431> is a creeper",colour=Colour.red())
+            emb.set_image(choice(links))
+            await message.channel.send(embed=emb)
 
     @commands.command(name="owner")
     async def owner_command(self,ctx,*args):
