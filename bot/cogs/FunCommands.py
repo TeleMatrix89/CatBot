@@ -34,9 +34,9 @@ class FunCommands(Cog):
     @commands.command(name="creeper")
     async def creeper_command(self,ctx,member:Member= None):
         await ctx.message.delete()
-        if(ctx.author.id not in [780813092065116170,380068718379663360,268122068007124993]): return
+        if(ctx.author.id not in [615731606677880842,380068718379663360,268122068007124993]): return
         if(member is None): return
-        if(member.id in [780813092065116170,380068718379663360,268122068007124993]): return
+        if(member.id in [615731606677880842,380068718379663360,268122068007124993]): return
         links = [
             "https://tenor.com/view/minecraft-creeper-whipping-hair-video-games-gangnam-style-gif-18649087",
             "https://tenor.com/view/minecraft-creeperrap-boomboomboom-gif-9738459",
