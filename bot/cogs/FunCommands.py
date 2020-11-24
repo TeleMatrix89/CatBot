@@ -31,6 +31,20 @@ class FunCommands(Cog):
             emb.set_image(choice(links))
             await message.channel.send(embed=emb)
 
+    @commands.command(name="creeper")
+    async def creeper_command(self,ctx,member:Member= None):
+        if(ctx.author.id not in [615731606677880842,380068718379663360,268122068007124993]): return
+        if(member is None): return
+        if(member.id in [615731606677880842,380068718379663360,268122068007124993]): return
+        links = [
+            "https://tenor.com/view/minecraft-creeper-whipping-hair-video-games-gangnam-style-gif-18649087",
+            "https://tenor.com/view/minecraft-creeperrap-boomboomboom-gif-9738459",
+            "https://tenor.com/view/creeper-spin-roblox-gif-16954879"
+        ]
+        emb = Embed(description=f"Watch out {member.mention} is a creeper",colour=Colour.red())
+        emb.set_image(choice(links))
+        await ctx.send(embed=emb)
+
     @commands.command(name="owner")
     async def owner_command(self,ctx,*args):
         await ctx.send("We all know that Lord Tropical is the owner")
