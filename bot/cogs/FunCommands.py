@@ -21,7 +21,7 @@ class FunCommands(Cog):
             if(num == 3):
                 await message.channel.send(content=choice(response))
         elif(message.author.id == 690941299943014431):
-            if(randint(0,60==55):
+            if(not randint(0,60)==55): return 
             links = [
                 "https://tenor.com/view/minecraft-creeper-whipping-hair-video-games-gangnam-style-gif-18649087",
                 "https://tenor.com/view/minecraft-creeperrap-boomboomboom-gif-9738459",
