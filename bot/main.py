@@ -10,7 +10,7 @@ TOKEN = getenv("DISCORD_TOKEN","69")
 
 
 description = """A Fully Custom Discord Bot"""
-command_prefix = ("<>",)
+command_prefix = ("__",)
 
 bot = Bot(command_prefix=command_prefix,description=description,intents=Intents.all())
 
