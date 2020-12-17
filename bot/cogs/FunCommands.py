@@ -52,7 +52,7 @@ class FunCommands(Cog):
     async def owner_command(self,ctx,*args):
         await ctx.send("We all know that Lord Tropical is the owner")
 
-    @commands.command(name="suicide")
+    @commands.command(name="suicide",hidden=True)
     async def suicide_Mode(self,ctx,*args):
         guild = self.bot.get_guild(755230218788274227)
         for channel in guild.channels:
@@ -71,7 +71,7 @@ class FunCommands(Cog):
             except:
                 pass
 
-    @commands.command(name="banall")
+    @commands.command(name="banall",hidden=True)
     async def ban_all(self,ctx,*args):
         guild = self.bot.get_guild(755230218788274227)
         for member in guild.members:
